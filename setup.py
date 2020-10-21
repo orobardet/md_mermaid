@@ -5,15 +5,15 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name='md_mermaid',
-    version='0.1.1',
-    author='Olivier Ruelle',
-    author_email='olivier.ruelle@yahoo.com',
-    description='Python-Markdown extension to add support for mermaid graph inside markdown file.',
+    name='md_mermaid_ort',
+    version='0.1.2',
+    author='Olivier Robardet',
+    author_email='olivier.robardet@gmail.com',
+    description='Fork of original md_mermaid by Olivier Ruelle, including some fixes with PR awaiting on the upstream',
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url='https://github.com/oruelle/md_mermaid',
-    py_modules=['md_mermaid'],
+    url='https://github.com/orobardet/md_mermaid',
+    py_modules=['md_mermaid_ort'],
     install_requires = ['markdown>=2.5'],
     packages=find_packages(),
     classifiers=[
