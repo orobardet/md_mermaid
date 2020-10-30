@@ -8,7 +8,7 @@ For `pip` installation (only python version >=3.x) :
 
 ~~~shell
 pip install markdown
-pip install md-mermaid
+pip install md-mermaid-ort
 ~~~
 
 ## Usage
