@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name='md-mermaid-ort',
-    version='0.1.3',
+    version='0.1.4',
     author='Olivier Robardet',
     author_email='olivier.robardet@gmail.com',
     description='Fork of original md_mermaid by Olivier Ruelle, including some fixes with PR awaiting on the upstream',
