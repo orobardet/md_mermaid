@@ -73,3 +73,26 @@ The `<script>...</script>` line appears only once even if there are several grap
 >
 > * mermaid.css (optional, can be customised)
 > * mermaid.min.js (can be download here [here](https://unpkg.com/mermaid@8.1.0/dist/)) 
+
+## Development
+
+### Build and publish a new version on pypi
+
+- Increment the version in `setup.py`
+- Build the package:
+```
+python3 setup.py sdist bdist_wheel
+``` 
+- Upload the packages on pypi:
+```
+python3 -m twine upload --repository pypi dist/*
+```
+- Commit, tag the commit with the version number, and push all that
+
+For the twine upload to work, it needs a `~/.pypirc` file declaring the `pypi` repository:
+
+```ini
+[pypi]                                                                                                                                                                                                                                        
+  username = __token__
+  password = pypi-<AN_ALLOWED_PYPI_TOKEN>
+```
